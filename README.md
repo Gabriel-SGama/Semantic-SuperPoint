@@ -1,7 +1,7 @@
 # Semantic-superpoint (SSp)
 
-This is the official implementation of the paper [NO_LINK_AVAILABLE_YET].<!-- [Semantic SuperPoint: a Deep Semantic Descriptor](NEED_TO_ADD_LINK).  --> The implementation is based on the open source implementation of the 
-[SuperPoint paper](https://arxiv.org/abs/1712.07629) done by [You-Yi Jau](https://github.com/eric-yyjau) and [Rui Zhu](https://github.com/Jerrypiglet)
+This is the official implementation of the paper [NO_LINK_AVAILABLE_YET].<!-- [Semantic SuperPoint: a Deep Semantic Descriptor](NEED_TO_ADD_LINK).  --> The implementation is based on the open source implementation of the SuperPoint
+[paper](https://arxiv.org/abs/1712.07629) done by [You-Yi Jau](https://github.com/eric-yyjau) and [Rui Zhu](https://github.com/Jerrypiglet)
 
 - Differences between our model and SuperPoint (Sp)
   - The SSp uses a segmentation head to learn semantic segmentation through multi-task learning. The core idea is to make the descriptor intrinsically learn semantic information extracted by the shared encoder;
