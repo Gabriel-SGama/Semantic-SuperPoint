@@ -7,10 +7,10 @@ This is the official implementation of the paper [NO_LINK_AVAILABLE_YET].<!-- [S
   - The SSp uses a segmentation head to learn semantic segmentation through multi-task learning. The core idea is to make the descriptor intrinsically learn semantic information extracted by the shared encoder;
   - This implementation uses the 2017 MS-COCO dataset instead of the 2014 one;
   - We implement multiple multi-task losses to improve the final result, more specifically: [uncertainty based loss](https://arxiv.org/pdf/1705.07115.pdf) and [Central dir + Tensor](https://arxiv.org/pdf/2204.06698.pdf). The results are compared against the uniform loss.
-## Note
+# Note
 The code used to implement the central direction + tensor method is not public so we removed from this repository (the *_ang files will not work now)
   
-### Semantic SuperPoint model:
+## Semantic SuperPoint model:
 
 ![SSp](imgs/SSp.png?raw=true "SSp")
 ## Comparing both models
