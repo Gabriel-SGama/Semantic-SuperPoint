@@ -237,8 +237,10 @@ python evaluation.py logs/sift_test/predictions --sift --repeatibility --homogra
 ## Pretrained models
 ### Best of each method
 - *COCO dataset*
-  - SSp + unc: ```logs/superpoint_coco_ssmall_ML22/checkpoints/superPointNet_180000_checkpoint.pth.tar```
-  - Sp + unc: ```logs/superpoint_coco_2017_ML22/checkpoints/superPointNet_185000_checkpoint.pth.tar```
+  - SSp + unc: 
+  ```logs/superpoint_coco_ssmall_ML22/checkpoints/superPointNet_180000_checkpoint.pth.tar```
+  - Sp + unc: 
+  ```logs/superpoint_coco_2017_ML22/checkpoints/superPointNet_185000_checkpoint.pth.tar```
 
 - *KITTI dataset*
 
