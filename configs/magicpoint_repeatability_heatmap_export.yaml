@@ -1,0 +1,45 @@
+data:
+    name: 'patches_dataset'
+    dataset: 'hpatches'  # 'coco' 'hpatches'
+    alteration: 'all'  # 'all' 'i' 'v'
+    preprocessing:
+        # resize: [120, 160]  # [120, 160] for HPatches and False for coco
+        resize: [240, 320]  # [240, 320] for HPatches and False for coco
+    #    resize: [480, 640]  # [240, 320] for HPatches and False for coco
+
+front_end_model: 'Val_model_heatmap'  # 'Train_model_frontend'
+model:
+    # name: 'magic_point'
+    # name: 'SuperPointNet_pretrained' # SuperPointNet_heatmap
+    name: 'SuperPointNet_gauss2' # SuperPointNet_heatmap
+    # name: 'SuperPointNet_gauss2_ssmall'
+    params: {
+    }
+
+    # learning_rate: 0.0001 # 0.0001
+    detection_threshold: 0.015 # 0.015
+
+    batch_size: 1
+    eval_batch_size: 1
+    # output parameters
+    learning_rate: 0.001
+    detection_threshold: 0.015 # 0.001
+    nms: 4
+    top_k: 1000
+    nn_thresh: 1.0 # 0.7
+    homography_adaptation:
+        num: 0
+    subpixel: 
+        enable: true
+        patch_size: 5
+    rand_noise:
+        enable: false
+        sigma: 0.2
+
+    # folder: 'logs/superpoint_coco_normal_1_1_200k/checkpoints/'
+    folder: 'logs/superpoint_coco_2017_ML22/checkpoints/'
+    # folder: 'logs/superpoint_coco_ssmall_ML22/checkpoints/'
+    pretrained: 'finds in program'
+
+
+eval_iter: 1000

@@ -1,0 +1,51 @@
+data:
+    # name: 'kitti'
+    dataset: 'Kitti_inh'  # 'coco' 'hpatches', 'Kitti', ''
+    export_folder: 'train'
+    alteration: 'all'  # 'all' 'i' 'v'
+    root: 'datasets/kitti_wVal' # root for dataset
+    root_split_txt: 'datasets/kitti_split'  # split file provided in datasets/kitti_split
+    preprocessing:
+       resize: [384, 1248]  # hand defined, original: [375, 1242]
+        # resize: [192, 624]  # hand defined
+        # resize: [96, 312]  # hand defined
+    gaussian_label:
+        enable: false # false
+        sigma: 1.
+    homography_adaptation:
+        enable: true
+        num: 20 # 100
+        aggregation: 'sum'
+        filter_counts: 0
+        homographies:
+            params:
+                translation: true
+                rotation: true
+                scaling: true
+                perspective: true
+                scaling_amplitude: 0.2
+                perspective_amplitude_x: 0.2
+                perspective_amplitude_y: 0.2
+                allow_artifacts: true
+                patch_ratio: 0.85
+#    name: 'coco'
+#    cache_in_memory: false
+#    validation_size: 100
+model:
+    # name: 'SuperPointNet'  # need to use old version of network
+    name: 'SuperPointNet_gauss2' # 'SuperPointNet_gauss2'
+    batch_size: 1
+    detection_threshold: 0.015 # 0.015
+    nms: 4
+    top_k: 600 # no use
+
+    params: {}
+    subpixel:
+        enable: false
+
+# eval_iter: -1
+
+# pretrained: 'logs/magicpoint_synth20/checkpoints/superPointNet_200000_checkpoint.pth.tar'
+pretrained: 'logs/magicpoint_synth_t2/checkpoints/superPointNet_100000_checkpoint.pth.tar'
+
+
