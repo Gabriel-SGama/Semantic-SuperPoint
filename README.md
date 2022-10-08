@@ -239,10 +239,10 @@ python evaluation.py logs/sift_test/predictions --sift --repeatibility --homogra
 - *COCO dataset*
   - SSp + unc: 
   
-  ```logs/superpoint_coco_ssmall_ML22/checkpoints/superPointNet_180000_checkpoint.pth.tar```
+    ```logs/superpoint_coco_ssmall_ML22/checkpoints/superPointNet_180000_checkpoint.pth.tar```
   - Sp + unc: 
   
-  ```logs/superpoint_coco_2017_ML22/checkpoints/superPointNet_185000_checkpoint.pth.tar```
+    ```logs/superpoint_coco_2017_ML22/checkpoints/superPointNet_185000_checkpoint.pth.tar```
 
 - *KITTI dataset*
 
