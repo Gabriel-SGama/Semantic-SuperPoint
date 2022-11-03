@@ -1,6 +1,6 @@
 # Semantic-superpoint (SSp)
 
-This is the official implementation of the paper [NO_LINK_AVAILABLE_YET].<!-- [Semantic SuperPoint: a Deep Semantic Descriptor](NEED_TO_ADD_LINK).  --> The implementation is based on the open source implementation of the SuperPoint
+This is the official implementation of the paper [Semantic SuperPoint: a Deep Semantic Descriptor](https://arxiv.org/abs/2211.01098). The implementation is based on the open source implementation of the SuperPoint
 [paper](https://arxiv.org/abs/1712.07629) done by [You-Yi Jau](https://github.com/eric-yyjau) and [Rui Zhu](https://github.com/Jerrypiglet)
 
 - Differences between our model and SuperPoint (Sp)
