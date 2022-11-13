@@ -15,36 +15,18 @@ The code used to implement the central direction + tensor method is not public a
 ![SSp](imgs/SSp.png?raw=true "SSp")
 ## Comparing both models
 ### Results on HPatches
-| Model                | Homography estimation |           |           | Detector metrics |           | Descriptor metrics |                |
-| -------------------- | --------------------- | --------- | --------- | ---------------- | --------- | ------------------ | -------------- |
-|                      | Epsilon = 1           | 3         | 5         | Repeatability    | MLE       | NN mAP             | Matching Score |
-| Sp + uni (baseline)  | 0.476                 | 0.748     | **0.817** | 0.599            | 1.017     | **0.864**          | 0.519          |
-| Sp + unc             | 0.460                 | 0.745     | 0.812     | 0.599            | 1.010     | **0.864**          | 0.520          |
-| Sp + ct              | **0.493**             | 0.753     | 0.812     | **0.602**        | 1.001     | 0.862              | 0.519          |
-| SSp + uni (**ours**) | 0.398                 | 0.710     | 0.797     | 0.584            | 1.052     | 0.843              | 0.506          |
-| SSp + unc (**ours**) | 0.450                 | 0.745     | 0.816     | 0.598            | 1.005     | **0.864**          | **0.522**      |
-| SSp + ct (**ours**)  | 0.466                 | **0.762** | 0.805     | 0.598            | **0.999** | 0.858              | 0.519          |
+![SSp](imgs/HPATCHES.png?raw=true "HPATCHES")
 
+- It was not possible to replicate the result obtained from the Magic Leaps pretrained model since the official implementation is not public available;
+- Compared to the others SuperPoint variations the SSp + unc performs better at the Matching Score;
 - Pretrained models can be found in logs folder;
 - "pretrained/superpoint_v1.pth" is from https://github.com/magicleap/SuperPointPretrainedNetwork
 - The evaluation is done under our evaluation scripts.
 
 ## Results on the KITTI sequence dataset (SLAM)
-To extract the trajectories from the KITTI sequence dataset we used this repository: [Semantic_ORB_SLAM2](https://github.com/Gabriel-SGama/Semantic_ORB_SLAM2). The APE was averaged over 10 runs in each sequence.
+To extract the trajectories from the KITTI sequence dataset we used this repository: [Semantic_ORB_SLAM2](https://github.com/Gabriel-SGama/Semantic_ORB_SLAM2). The APE and RPE were averaged over 10 runs in each sequence.
 
-| Sequence | Sp       | SSp (**ours**) | p-value |
-| -------- | -------- | -------------- | ------- |
-| 00       | 6.77     | **6.65**       | 0.71    |
-| 01       | 286.71   | **209.99**     | 0.13    |
-| 02       | 22.46    | **22.31**      | 0.82    |
-| 03       | **1.32** | 1.63           | 0.00    |
-| 04       | **0.84** | 0.90           | 0.94    |
-| 05       | **5.80** | 6.31           | 0.82    |
-| 06       | 11.95    | **11.83**      | 0.41    |
-| 07       | 3.39     | **2.12**       | 1.00    |
-| 08       | 31.32    | **26.70**      | 0.00    |
-| 09       | 35.94    | **31.79**      | 0.00    |
-| 10       | 5.51     | **4.95**       | 0.02    |
+![SSp](imgs/SLAM.png?raw=true "SLAM")
 
 
 ## Installation
