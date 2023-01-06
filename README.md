@@ -243,7 +243,15 @@ python3 convert2script
 
 Semantic SuperPoint:
 ```
-Not published yet
+@INPROCEEDINGS{9996027,
+  author={Gama, Gabriel Soares and Dos Santos Rosa, Nícolas and Grassi, Valdir},
+  booktitle={2022 Latin American Robotics Symposium (LARS), 2022 Brazilian Symposium on Robotics (SBR), and 2022 Workshop on Robotics in Education (WRE)}, 
+  title={Semantic SuperPoint: A Deep Semantic Descriptor}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={294-299},
+  doi={10.1109/LARS/SBR/WRE56824.2022.9996027}}
 ```
 
 # Credits
