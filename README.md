@@ -155,7 +155,7 @@ You need pseudo ground truth labels to traing detectors. Labels can be exported 
   - labels: the exported labels from homography adaptation
   - pretrained: specify the pretrained model (you can train from scratch)
   - config file is slightly different for the semantic version. See an example in "configs/superpoint_coco_train_wsem_heatmap"
-- files that end on *_all.py are for training with the uniform sum loss and *_all_ct.py are for training with central dir + tensor method
+- files that end on *_all.py are for training with the uniform sum loss and *_all_ang.py are for training with central dir + tensor method
 - 'eval': turn on the evaluation during training 
 
 - Semantic SuperPoint specifcs
