@@ -35,8 +35,6 @@ To extract the trajectories from the KITTI sequence dataset we used this reposit
 - cuda
 - Tested with python 3.8.10, Pytorch 1.9.0 and CUDA 11.2. Not using this PyTorch version may cause a problem when loading the pre-trained weights (see issue [#4](/../../issues/4)). 
 ```
-conda create --name py36-sp python=3.6
-conda activate py36-sp
 pip install -r requirements.txt
 pip install -r requirements_torch.txt # install pytorch
 ```
