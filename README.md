@@ -28,14 +28,12 @@ To extract the trajectories from the KITTI sequence dataset we used this reposit
 
 ![SSp](imgs/SLAM.png?raw=true "SLAM")
 
-
 ## Installation
 ### Requirements
-- python == 3.6
-- pytorch >= 1.1 (tested in 1.3.1)
-- torchvision >= 0.3.0 (tested in 0.4.2)
-- cuda (tested in cuda10)
-
+- pytorch >= 1.1
+- torchvision >= 0.3.0
+- cuda
+- Tested with python 3.8.10, Pytorch 1.9.0 and CUDA 11.2. Not using this PyTorch version may cause a problem when loading the pre-trained weights (see issue [#4](/../../issues/4)). 
 ```
 conda create --name py36-sp python=3.6
 conda activate py36-sp
